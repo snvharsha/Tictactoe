@@ -1,9 +1,14 @@
-/* 41436a , 984063 , f64668 , fe9677 */
-/* 355c7d,725a71,c56c86,ff7582 */
 
 body{
     text-align: center;
     background-color: #355c7d;
+}
+.heading{
+    font-size: 40px;
+    display: inline-flex;
+    padding: 5px;
+    border-radius: 8px ;
+    box-shadow: 1px 1px 3px 3px ;
 }
 #winningMsg{
     color:  rgb(43, 248, 43);
