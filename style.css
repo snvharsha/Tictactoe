@@ -1,0 +1,84 @@
+/* 41436a , 984063 , f64668 , fe9677 */
+/* 355c7d,725a71,c56c86,ff7582 */
+
+body{
+    text-align: center;
+    background-color: #355c7d;
+}
+#winningMsg{
+    color:  rgb(43, 248, 43);
+    box-shadow: rgb(43, 248, 43) .6px .3px 4px 3px;
+    text-align: center;
+    font-size: 50px;
+    
+}
+.winner{
+    margin-bottom:50px ;
+}
+.hide{
+    display: none;
+}
+.container{
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.game{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+.btn{
+   height: 140px;
+   background-color:  #c56c86;
+   box-shadow:#6a3c4a 1px 0.6px 1.3px 2.3px  ;
+   width: 110px;
+    text-align: center; 
+    color: darkgreen;  
+    font-size: 3rem; 
+    justify-content: center; 
+    margin: 3px;
+    outline: none;
+    border-radius:20%; 
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #f996b4;
+}
+.player{
+    height: fit-content;
+    padding: 2px 5px 7px 5px;
+   background-color:#4a7faa;
+   box-shadow: #1d2c38 1px 1px 3px 3px;
+    border: 2px solid;
+}
+input{
+    border-radius: 6px;
+    outline: none;
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+    font-weight: 800;
+}
+#reset-btn{
+    margin-top: 3rem;
+    background-color: darkgreen;
+    color: white;
+    height: 60px;
+    width:auto;
+    font-size: 25px;
+    border-radius:20px ;
+    content: fill;
+}
+#reset-btn:hover{
+    background-color: lightgreen;
+    color: black;
+   cursor: pointer;
+   height: 60px;
+   font-weight: bold;
+}
