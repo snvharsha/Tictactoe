@@ -46,12 +46,12 @@ playerIp1.addEventListener("change",displayStart) ;
 let chance = true;
 btns.forEach((btn)=>{
     btn.addEventListener("click",()=>{
+               alertMsg.innerText =  "play";
         if(playerIp1.value !== "" && playerIp2.value !== ""){
-           alertMsg.innerText =  "play";
             for(let btn of btns)
             {
                  btn.disabled = false;
-            };
+            }
        if(turnO)
        {
              //player -O first player
