@@ -4,7 +4,6 @@ let btns = document.querySelectorAll(".btn");
 let resetBtn = document.querySelector("#reset-btn");
 let playerIp1 = document.querySelector("#firstplayer");
 let playerIp2 = document.querySelector("#secondplayer");
-// console.log(playerIp1.value);
 let msgContainer = document.querySelector(".winner"); // winner div
 let msg = document.querySelector("#winningMsg"); // winner msg span
 let turnO = true; // turns
@@ -38,28 +37,7 @@ else{
 }
 }) ;
 
-// chance to "play" -> display 
-
-btns.forEach((btn)=>{
-    btn.addEventListener("click",()=>{
-        alertMsg.innerText ="play";
-        if(playerIp1.value !== "" && playerIp2.value !== ""){
-          
-            for(let btn of btns)
-            {
-                btn.disabled = false;
-            }
-
-    }
-        else{
-           
-            disableBtns();
-        }
-        
-    })
-});
-
-// button traversal to find the winnig pattern after each turn
+// button traversal to find the winnig pattern after each turn and displaying respective turns
 let chance = true;
 btns.forEach((btn)=>{
     btn.addEventListener("click",()=>{
