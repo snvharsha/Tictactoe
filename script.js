@@ -20,23 +20,26 @@ document.querySelector(".game").addEventListener("click",()=>{
     });
 
 // Displaying "START" in #player1 Div
-let alertMsg = document.createElement("h1");
-playerIp2.addEventListener("change",()=>{
-if(playerIp1.value !== "" && playerIp2.value !== ""){
-alertMsg.innerText ="Start ";
-document.querySelector("#player1").appendChild(alertMsg);
-for(let btn of btns)
-{
-    btn.disabled = false;
-}
-}
-else{
+const displayStart = ()=>{
+    if(playerIp1.value !== "" && playerIp2.value !== ""){
+    alertMsg.innerText ="Start ";
+    document.querySelector("#player1").appendChild(alertMsg);
     for(let btn of btns)
     {
-        btn.disabled = true;
+        btn.disabled = false;
     }
-}
-}) ;
+    }
+    else{
+        for(let btn of btns)
+        {
+            btn.disabled = true;
+        }
+    }
+    };
+
+let alertMsg = document.createElement("h1");
+playerIp2.addEventListener("change",displayStart) ;
+playerIp1.addEventListener("change",displayStart) ;
 
 // button traversal to find the winnig pattern after each turn and displaying respective turns
 let chance = true;
