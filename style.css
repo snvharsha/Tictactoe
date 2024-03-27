@@ -2,12 +2,31 @@ body{
     text-align: center;
     background-color: #355c7d;
 }
+
 .heading{
     font-size: 40px;
     display: inline-flex;
     padding: 5px;
     border-radius: 8px ;
     box-shadow: 1px 1px 3px 3px ;
+}
+#newgamebtn{
+    display: inline-block;
+    margin-top: 3rem;
+    background-color: darkgreen;
+    color: white;
+    height: 60px;
+    width:auto;
+    font-size: 25px;
+    border-radius:20px ;
+    content: fill;
+}
+#newgamebtn:hover{
+    background-color: lightgreen;
+    color: black;
+   cursor: pointer;
+   height: 60px;
+   font-weight: bold;
 }
 #winningMsg{
     color:  rgb(43, 248, 43);
@@ -17,7 +36,8 @@ body{
     
 }
 .winner{
-    margin-bottom:8px ;
+       display: flex;
+     flex-direction: column;
 }
 .hide{
     display: none;
