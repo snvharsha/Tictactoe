@@ -109,6 +109,8 @@ const checkWinner=()=>{
 const restart = ()=>{
     turnO=true;
     chance=true;
+    playerIp1.value = "";
+    playerIp2.value = "";
     enableBtns();
     msgContainer.classList.add("hide");
     alertMsg.innerText="";
@@ -154,11 +156,5 @@ const showWinner =(pasVal1)=>{
     msg.innerText = `Congratualtions,Winner is ${playerIp2.value}`;  msgContainer.classList.remove("hide");
     }
 }
-resetBtn.addEventListener("click",()=>{
-    restart();
-});
-newgamebtn.addEventListener("click",()=>{
-    restart();
-    playerIp1.value = "";
-    playerIp2.value = "";
-});
+resetBtn.addEventListener("click",restart);
+newgamebtn.addEventListener("click",restart);
