@@ -4,6 +4,7 @@ let btns = document.querySelectorAll(".btn");
 let resetBtn = document.querySelector("#reset-btn");
 let playerIp1 = document.querySelector("#firstplayer");
 let playerIp2 = document.querySelector("#secondplayer");
+let newgamebtn = document.querySelector("#newgamebtn");
 let msgContainer = document.querySelector(".winner"); // winner div
 let msg = document.querySelector("#winningMsg"); // winner msg span
 let turnO = true; // turns
@@ -108,8 +109,6 @@ const checkWinner=()=>{
 const restart = ()=>{
     turnO=true;
     chance=true;
-    playerIp1.value = "";
-    playerIp2.value = "";
     enableBtns();
     msgContainer.classList.add("hide");
     alertMsg.innerText="";
@@ -155,4 +154,11 @@ const showWinner =(pasVal1)=>{
     msg.innerText = `Congratualtions,Winner is ${playerIp2.value}`;  msgContainer.classList.remove("hide");
     }
 }
-resetBtn.addEventListener("click",restart);
+resetBtn.addEventListener("click",()=>{
+    restart();
+});
+newgamebtn.addEventListener("click",()=>{
+    restart();
+    playerIp1.value = "";
+    playerIp2.value = "";
+});
