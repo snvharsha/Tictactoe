@@ -20,6 +20,8 @@ document.querySelector(".game").addEventListener("click",()=>{
     });
 
 // Displaying "START" in #player1 Div
+
+let alertMsg = document.createElement("h1");
 const displayStart = ()=>{
     if(playerIp1.value !== "" && playerIp2.value !== ""){
     alertMsg.innerText ="Start ";
@@ -37,7 +39,6 @@ const displayStart = ()=>{
     }
     };
 
-let alertMsg = document.createElement("h1");
 playerIp2.addEventListener("change",displayStart) ;
 playerIp1.addEventListener("change",displayStart) ;
 
